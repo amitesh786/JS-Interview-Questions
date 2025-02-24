@@ -9,7 +9,6 @@ This repository is a collection of frequently asked interview questions related 
 
 ## 🔧 Setup (For Developers)
 - Clone the repository: `git clone https://github.com/amitesh786/JS-Interview-Questions.git`
-- cd ConvertPdf
 - Open the folder to access interview questions and solutions.
 
 ## 📜 License
