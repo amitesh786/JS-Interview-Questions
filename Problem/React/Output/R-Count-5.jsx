@@ -24,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // D) React will throw an error
 
 // Explanation
+
 // setCount(prev => prev + 1) correctly updates the state based on the previous value.
 
 // However, state updates in React are asynchronous.
@@ -43,4 +44,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // Click #2:
 // setCount(prev => prev + 1) schedules count = 2
 // console.log(count) logs 1
-

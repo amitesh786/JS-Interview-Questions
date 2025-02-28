@@ -31,5 +31,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // On every state update (when count changes), React first runs cleanup, then re-runs the effect.
 
 // Initial render -> Effect runs
-// When you click the button (count updates): -> Cleanup runs Effect runs
-// Click again -> Cleanup runs Effect runs
+// When you click the button (count updates): -> Cleanup runs - then -> Effect runs
+// Click again -> Cleanup runs - then -> Effect runs
+
