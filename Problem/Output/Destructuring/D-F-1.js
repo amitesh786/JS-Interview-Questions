@@ -12,8 +12,8 @@ userInfo();
 
 // "Name: Emma, Age: 30"
 // "Name: John, Age: 30"
-// ❌ Error! (Cannot destructure undefined)
-// 👉 Fix: Provide a default empty object {} in function parameters:
+// Error! (Cannot destructure undefined)
+// Fix: Provide a default empty object {} in function parameters:
 
 function userInfo({ name = "John", age = 30 } = {}) {
   console.log(`Name: ${name}, Age: ${age}`);
