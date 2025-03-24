@@ -1,0 +1,38 @@
+<!-- What will be the color of the <p> text in the following scenario? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            color: red;
+        }
+        div p {
+            color: blue;
+        }
+        #unique {
+            color: green !important;
+        }
+        .special {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="unique" class="special">What color am I?</p>
+    </div>
+</body>
+</html>
+
+<!-- p { color: red; } → This sets all <p> elements to red.
+
+div p { color: blue; } → This has higher level than the first rule, so normally it would override it.
+
+.special { color: purple; } → This targets elements with class special, but it has the same 
+level as div p (class selector and element selector both count as specificity of (0,1,1)), so it would apply normally.
+
+#unique { color: green !important; } → Since #unique is an ID selector (which has higher specificity 
+than class or element selectors) and it uses !important, it will override all other rules.
+
+Thus, the final computed color for the <p> element is green. -->

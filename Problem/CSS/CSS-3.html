@@ -1,0 +1,40 @@
+<!-- What color will the text inside the .grandchild element display? -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .parent {
+            color: blue;
+        }
+
+        .child {
+            color: red;
+        }
+
+        .child .grandchild {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="grandchild">What color is this text?</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- The color of the text will be green. -->
+
+<!-- 
+The .parent class applies blue to the text, 
+but this color only affects direct children unless overridden.
+
+The .child class applies red to the text, 
+but this can be overridden by more specific rules.
+
+The .child .grandchild rule specifically targets .grandchild 
+and applies green, which is the final color. -->
