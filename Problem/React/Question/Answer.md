@@ -45,3 +45,30 @@ The Problem: unnecessary function re-creation: In React, functions inside compon
 - Solution: useCallback memoizes the function, ensuring it's only re-created when dependencies change.
 - Benefit: Prevents unnecessary renders, improving performance.
 
+* Problem 4: What is React Context and how does it work?
+
+React Context is a built-in feature that allows you to share state and data across components without passing props manually at every level (prop drilling). 
+It is useful for global state management, such as:
+
+- Theme (dark/light mode)
+- Authentication (user login state)
+- Language settings
+- Global UI settings (e.g., modals, notifications)
+
+**How React Context works**
+
+React Context has three main parts:
+1. createContext() → Creates a Context object.
+2. Provider → Wraps components and provides a value.
+3. Consumer or useContext() → Accesses the Context value inside components.
+
+**When to use React Context?**
+1. When multiple components need access to the same data (e.g., auth, theme, user preferences).
+2. When you want to avoid prop drilling (passing props down multiple levels).
+3. When state management is simple (for complex state, use Redux or Zustand).
+
+**Keys:**
+1. React Context allows global state sharing without prop drilling.
+2. It uses Provider to pass data and useContext to access it.
+3. It’s great for themes, auth, and global settings but not a replacement for state management libraries in complex apps.
+
