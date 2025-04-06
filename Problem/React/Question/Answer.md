@@ -28,3 +28,20 @@ It runs after the component renders and can be configured to re-run only when ce
 2. It runs after render, and its execution depends on the dependency array.
 3. It can fetch data, manipulate the DOM, handle subscriptions, etc.
 4. It supports a cleanup function to avoid memory leaks.
+
+* Problem 3: How can useCallback solve a common issue with JavaScript in React?
+
+useCallback is a React Hook that memoizes a function, preventing it from being recreated on every render.
+
+The Problem: unnecessary function re-creation: In React, functions inside components are recreated on every render. This can cause performance issues when passing functions as props to child components, leading to unnecessary re-renders.
+
+- When should you use useCallback?
+1. When passing functions to memoized child components (React.memo).
+2. When passing functions as dependencies to useEffect, avoiding infinite loops.
+3. When optimizing performance in large apps with frequent re-renders.
+
+**Keys:**
+- Problem: Functions are recreated on every render, causing unnecessary child re-renders.
+- Solution: useCallback memoizes the function, ensuring it's only re-created when dependencies change.
+- Benefit: Prevents unnecessary renders, improving performance.
+
