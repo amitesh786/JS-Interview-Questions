@@ -105,3 +105,69 @@ React re-renders components whenever state or props change. If a component perfo
 2. It recalculates only when dependencies change.
 3. Best used for heavy computations, filtering large lists, and optimizing re-renders.
 4. Don’t overuse it—React’s default rendering is optimized in most cases.
+
+* Problem 6: How do you decide how to structure your components?
+
+Structuring components properly is crucial for maintainability, reusability, and performance.
+
+1. Follow a component-based approach: Each component should be small and focused on a single responsibility.
+
+2. Break components into reusable & presentational components:
+    - Presentational (UI) Components
+        - Only focus on rendering UI.
+        - Do not manage state or logic.
+    - Container (Logic) Components
+        - Handle data fetching, state, and business logic.
+        - Pass data down to presentational components.
+
+3. Organize components in a directory structure: 
+    - ui/ → Small, reusable UI components.
+    - layout/ → Structural components like Navbar and Sidebar.
+    - features/ → Components tied to specific features.
+    - hooks/ → Custom hooks like useAuth.
+    - context/ → Context providers for global state.
+    - pages/ → Page-level components (like Dashboard).
+    For example:
+    src/
+    │── components/
+    │   │── ui/            (Reused UI elements)
+    │   │   ├── Button.js
+    │   │   ├── Card.js
+    │   │── layout/        (Layout-related components)
+    │   │   ├── Navbar.js
+    │   │   ├── Sidebar.js
+    │   │── features/      (Business logic components)
+    │   │   ├── UserList.js
+    │   │   ├── UserCard.js
+    │── hooks/
+    │   ├── useAuth.js
+    │── context/
+    │   ├── AuthContext.js
+    │── pages/
+    │   ├── Home.js
+    │   ├── Dashboard.js
+    │── App.js
+    │── index.js
+   
+4. Keep components small & focused: A component should ideally:
+    - Do one thing well.
+    - Be under 200 lines of code (except complex ones).
+    - Be easy to test and reuse.
+
+5. Use context or state management wisely: 
+    - Use useState or useReducer for local component state.
+    - Use Context API when multiple components need shared data (like authentication).
+    - Use Redux/Zustand if state logic is complex (e.g., caching, global state).
+
+6. Use hooks for reusable logic: 
+    - If multiple components share logic (like fetching data), move it into a custom hook.
+    - Why?
+        - useFetch can be used in multiple components.
+        - Avoids repeating fetching logic in every component.
+
+**Keys**
+1. Break down components into small, reusable parts.
+2. Separate UI (presentational) and logic (container) components.
+3. Follow a structured folder organization (e.g., components/ui, context, hooks).
+4. Use Context API, Redux, or custom hooks for shared logic.
+5. Keep components small, focused, and easy to maintain.
