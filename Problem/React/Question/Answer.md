@@ -12,3 +12,19 @@
 2. Use useCallback() to memoize functions.
 3. Use useMemo() to memoize values.
 4. Use proper state management (avoid re-rendering everything unnecessarily).
+
+* Problem 2: What is useEffect, and what is a case where you might want to use it?
+
+useEffect is a React Hook that allows you to perform side effects in function components.
+- Side effects include things like:
+    - Fetching data from an API
+    - Manually manipulating the DOM
+    - Subscribing to events or WebSockets
+    - Setting up timers or intervals
+It runs after the component renders and can be configured to re-run only when certain dependencies change.
+
+**Keys:**
+1. useEffect handles side effects in function components.
+2. It runs after render, and its execution depends on the dependency array.
+3. It can fetch data, manipulate the DOM, handle subscriptions, etc.
+4. It supports a cleanup function to avoid memory leaks.
