@@ -72,3 +72,36 @@ React Context has three main parts:
 2. It uses Provider to pass data and useContext to access it.
 3. It’s great for themes, auth, and global settings but not a replacement for state management libraries in complex apps.
 
+* Problem 5: When would you want to use the useMemo hook?
+
+**What is useMemo?**
+useMemo is a React Hook that memoizes (caches) the result of an expensive computation to avoid unnecessary recalculations on re-renders.
+
+**Why Use useMemo?**
+React re-renders components whenever state or props change. If a component performs a heavy calculation on every render, it slows down performance.
+👉 useMemo caches the computed result and only recalculates it when dependencies change.
+
+**Common Use Cases for useMemo**
+1. Optimizing expensive calculations:
+    - Problem: Heavy computation runs on every render, even when unnecessary. 
+    - Solution: Use useMemo to store the result until dependencies change.
+    - Helps: The function only runs when number changes instead of running on every render.
+2. Preventing Unnecessary Re-renders in Lists
+    - Problem: Large lists cause performance issues when filtering or sorting frequently.
+    - Solution: Use useMemo to optimize filtering.
+    - The filtering logic only runs when search or users change instead of on every render.
+3. Preventing Unnecessary Re-renders in Child Components
+    - Problem: React re-renders child components when parent components update.
+    - Use useMemo to memoize objects that are passed as props.
+    - ChildComponent won’t re-render when count changes because user is memoized.
+
+**When not to use useMemo**
+1. If the computation is simple (e.g., num * 2 without heavy loops, API calls).
+2. If it adds unnecessary complexity—React’s default rendering is often efficient.
+3. If there’s no measurable performance improvement.
+
+**Keys:**
+1. useMemo improves performance by caching expensive calculations.
+2. It recalculates only when dependencies change.
+3. Best used for heavy computations, filtering large lists, and optimizing re-renders.
+4. Don’t overuse it—React’s default rendering is optimized in most cases.
