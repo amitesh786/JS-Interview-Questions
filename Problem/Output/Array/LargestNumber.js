@@ -13,3 +13,14 @@ function findMin(arr) {
 }
 
 console.log(findMin([10, 25, 5, 30, 40])); // 5
+
+// Loop to find largest number in an Array
+
+let num = [10, 25, 5, 30, 40];
+let maxNum = num[0];
+
+for (let i=0; i<num.length; i++) {
+  if (num[i] > maxNum) maxNum = num[i];
+}
+
+console.log("Largest number:", maxNum); // 40
