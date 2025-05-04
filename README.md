@@ -16,4 +16,5 @@ This repository is a collection of frequently asked interview questions related 
 
 ## 👨‍💻 Author
 - Developed by Amitesh Singh | © 2025
-- Contributions and suggestions are welcome! Feel free to create a pull request or open an issue. 🎯
+- Contributions and suggestions are welcome! 
+- Feel free to create a pull request or open an issue. 🎯
