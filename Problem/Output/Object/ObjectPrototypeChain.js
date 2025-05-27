@@ -10,3 +10,19 @@ console.log(Object.getPrototypeOf(dog) === animal); // ✅ true
 
 // isPrototypeOf() checks if an object exists anywhere in the prototype chain.
 // getPrototypeOf(obj) === prototype checks if the direct prototype matches.
+
+// --------------------------------
+
+// Given the following code, what will be logged?
+
+const proto = { greet: () => console.log("Hello") };
+const obj = Object.create(proto);
+obj.greet();
+
+// Output -> Hello
+
+// Explanation:
+// obj is created with proto as its prototype.
+// Since proto has a greet() method, 
+// calling obj.greet() looks up the prototype chain and finds greet(), which logs "Hello".
+
