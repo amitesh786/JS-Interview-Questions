@@ -1,17 +1,17 @@
 // Throwing a Custom Error
 
 function divide(a, b) {
-    if (b === 0) {
-      throw new Error("Cannot divide by zero!"); // Custom error
-    }
-    return a / b;
+  if (b === 0) {
+    throw new Error("Cannot divide by zero!"); // Custom error
   }
-  
-  try {
-    console.log(divide(10, 0)); // This will throw an error
-  } catch (error) {
-    console.log("Caught an error:", error.message);
-  }
+  return a / b;
+}
+
+try {
+  console.log(divide(10, 0)); // This will throw an error
+} catch (error) {
+  console.log("Caught an error:", error.message);
+}
 
 // Output
 
