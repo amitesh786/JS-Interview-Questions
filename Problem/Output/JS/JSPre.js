@@ -19,4 +19,3 @@ console.log("Value Funct:", funct(count)); // 4
 // let CountFn = (count++, count++, count => count + 1)(count);
 
 // console.log("Function:", CountFn); // 4
-
