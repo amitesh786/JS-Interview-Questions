@@ -16,7 +16,6 @@ console.log(test);
 
 // if (function fn(){})	Function is truthy → if runs
 
-// typeof fn	"undefined" (fn is not defined in this scope)
+// typeof fn "undefined" (fn is not defined in this scope)
 
-// test += typeof fn	test = "1undefined"
-
+// test += typeof fn test = "1undefined"
