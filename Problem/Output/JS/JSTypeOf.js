@@ -1,5 +1,4 @@
-
-
+// Output
 console.log(typeof null);
 console.log(null instanceof Object);
 console.log([] + {});
