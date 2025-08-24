@@ -16,7 +16,6 @@ console.log(obj2.nested.b);
 // nested: { b: 2 } is an object reference, so both obj1.nested and obj2.nested point to the same memory location.
 // Changing obj2.nested.b also changes obj1.nested.b.
 
-
 // Deep copy
 
 // A deep copy creates a new object or array and recursively copies all objects and arrays it contains. 

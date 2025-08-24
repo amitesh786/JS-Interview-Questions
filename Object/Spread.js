@@ -27,6 +27,5 @@ console.log(updatedObj); // { name: "Alice", age: 26, city: "New York" }
 // It's an easy way to create updated copies without modifying the original object.
 
 // Object Spread (...)
-
 // Used for copying, merging, and updating object properties.
 // Example: { ...obj1, key: "value" }
