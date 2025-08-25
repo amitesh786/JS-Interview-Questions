@@ -1,7 +1,7 @@
-
 console.log(new Array(1,2)); // [1, 2]
 
 console.log(Array(2)); // [empty × 2]
+
 // or
 // console.log(new Array(2));
 

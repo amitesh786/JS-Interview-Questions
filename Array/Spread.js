@@ -1,4 +1,3 @@
-
 // The spread operator (...) is a powerful feature in JavaScript used to expand elements of an array or properties of an object.
 
 // Array Spread (...)
