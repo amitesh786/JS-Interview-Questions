@@ -1,5 +1,4 @@
 // Handling Partial Failures Gracefully
-
 // By catching errors for individual requests,
 // we can return default values when an API fails.
 
@@ -13,7 +12,6 @@ forkJoin({
 });
 
 // Fix: Using catchError() for each request
-
 // The forkJoin() operator in RxJS allows you to execute
 // multiple HTTP requests in parallel and wait for all of them to complete before proceeding.
 
