@@ -1,5 +1,4 @@
 // ReversePipe
-
 @Pipe({
     name: 'reverse'
 })
