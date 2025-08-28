@@ -1,5 +1,4 @@
 // Question: Write a generic function that returns the first element of an array.
-
 function getFirstElement<T>(arr: T[]): T | undefined {
     return arr.length > 0 ? arr[0] : undefined;
 }
