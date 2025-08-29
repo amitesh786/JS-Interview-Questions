@@ -1,5 +1,4 @@
 // Question: Implement a function that checks if an input is a string using type guards.
-
 function isString(value: unknown): value is string {
     return typeof value === "string";
 }
