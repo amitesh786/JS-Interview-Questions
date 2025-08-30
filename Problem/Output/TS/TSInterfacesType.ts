@@ -1,6 +1,4 @@
-// TypeScript, interfaces and type aliases are both used to define object shapes, 
-// but they have key differences:
-
+// TypeScript, interfaces and type aliases are both used to define object shapes, but they have key differences:
 interface Person 
 { 
   name: string; 
