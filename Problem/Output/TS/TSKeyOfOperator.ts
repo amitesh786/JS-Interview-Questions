@@ -1,5 +1,4 @@
 // Question: Create a function that gets the value of an object using the keyof operator.
-
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
     return obj[key];
 }
