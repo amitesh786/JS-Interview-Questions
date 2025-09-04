@@ -1,5 +1,4 @@
 // Question: Implement a Singleton pattern in TypeScript.
-
 class Singleton {
     private static instance: Singleton;
 
