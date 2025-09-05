@@ -1,5 +1,4 @@
 // Question: Implement a TypeScript function using a discriminated union to handle different shapes.
-
 interface Circle {
     kind: "circle";
     radius: number;
