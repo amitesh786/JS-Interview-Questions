@@ -1,5 +1,4 @@
 // Unhandled Rejection Warning (In Modern Browsers & Node.js)
-
 // If a Promise rejects and there’s no .catch(), the error propagates as an unhandled promise rejection.
 
 Promise.reject(new Error("Something went wrong!"));
