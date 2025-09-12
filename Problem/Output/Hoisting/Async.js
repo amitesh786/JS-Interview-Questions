@@ -1,5 +1,4 @@
 // 2. Question: What will be logged in the console?
-
 for (var i = 0; i < 3; i++) {
     setTimeout(() => console.log(i), 1000);
 }
