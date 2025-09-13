@@ -1,5 +1,4 @@
 // 6. Question: What will be logged in the console?
-
 let count = 0;
 
 const increment = () => {
