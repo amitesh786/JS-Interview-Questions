@@ -1,5 +1,4 @@
 // 4. Question: What gets logged and in what order?
-
 console.log("A");
 
 setTimeout(() => console.log("B"), 0);
