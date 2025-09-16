@@ -1,5 +1,4 @@
 // 3. Question: What will be the output?
-
 let x = 10;
 
 function foo() {
