@@ -1,5 +1,4 @@
 // 1. Question: What will be the output of the following?
-
 console.log(foo);
 var foo = 10;
 console.log(foo);
