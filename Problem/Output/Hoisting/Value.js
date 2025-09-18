@@ -1,5 +1,4 @@
 // 7. Question: What will be logged?
-
 const obj = {
     value: 42,
     getValue: function () {
