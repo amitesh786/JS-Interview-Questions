@@ -1,5 +1,4 @@
 // flattens a nested array
-
 const arr = [1, [2, [3, [4, 5]], 6], 7];
 
 // solution 1:
@@ -11,7 +10,5 @@ const flattenArray = (arr) =>
 console.log(flattenArray(arr));
 
 // Solution 2
-
 // const flattenArray = arr => arr.flat(Infinity);
 // console.log(flattenArray([1, [2, [3, [4, 5]], 6], 7]));
-
