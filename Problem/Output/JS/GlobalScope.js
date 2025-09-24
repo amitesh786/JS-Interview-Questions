@@ -1,5 +1,4 @@
 let count = 0;
-
 const increment = () => {
   if (count === 0) {
     let count = 1;
