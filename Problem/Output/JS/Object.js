@@ -1,5 +1,4 @@
 // Object using property to avoid errors
-
 // Using if Condition (Safe Access)
 const person = { name: "Amitesh" };
 
