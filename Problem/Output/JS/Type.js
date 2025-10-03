@@ -1,5 +1,4 @@
 // What will be the output ?
-
 var test = 1;
 
 if (function fn(){}) {
