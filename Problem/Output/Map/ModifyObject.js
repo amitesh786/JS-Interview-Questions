@@ -1,5 +1,4 @@
 // 6. Modify an Array of Objects Conditionally
-
 const students = [
     { name: "Alice", score: 85 },
     { name: "Bob", score: 60 },
