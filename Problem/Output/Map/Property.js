@@ -1,5 +1,4 @@
 // 4. Add a New Property to Each Object
-
 const products = [
     { name: "Laptop", price: 1000 },
     { name: "Phone", price: 500 }
