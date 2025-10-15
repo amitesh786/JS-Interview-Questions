@@ -1,5 +1,4 @@
 // Question 5: Circular Dependencies
-
 // file: a.js
 const b = require('./b');
 module.exports = { name: "Module A", b };
