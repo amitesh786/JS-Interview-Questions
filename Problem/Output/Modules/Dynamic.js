@@ -1,5 +1,4 @@
 // 2. Dynamic Imports
-
 // file: main.js
 async function loadMathModule() {
     const math = await import('./math.js');
