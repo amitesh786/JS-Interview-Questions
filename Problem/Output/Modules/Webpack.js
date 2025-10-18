@@ -1,5 +1,4 @@
 // Webpack Entry and Output
-
 // webpack.config.js
 module.exports = {
     entry: './src/index.js',
