@@ -1,5 +1,4 @@
 // What will the following code output and why?
-
 const obj = {};
 Object.setPrototypeOf(obj, Array.prototype);
 console.log(obj.length);
@@ -16,4 +15,3 @@ console.log(obj.length);
 const arr = [];
 Object.setPrototypeOf(arr, Array.prototype);
 console.log(arr.length); // Output: 0 (Arrays have a built-in length property)
-
