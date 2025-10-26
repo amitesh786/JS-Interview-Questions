@@ -1,6 +1,5 @@
-function Car() {}
-
 // Car is a constructor function.
+function Car() {}
 // In JavaScript, functions have a special property called prototype, 
 // which is used to set up prototype inheritance for objects created by that function.
 
