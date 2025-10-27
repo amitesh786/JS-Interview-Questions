@@ -1,5 +1,4 @@
 // 1. Question: What will be the output?
-
 const a = {};
 const b = { key: "b" };
 const c = { key: "c" };
