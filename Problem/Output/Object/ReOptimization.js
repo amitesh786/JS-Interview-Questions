@@ -4,7 +4,6 @@
 // When you define a prototype in a constructor function, JavaScript optimizes the object structure early.
 
 // Fast Approach: Constructor with Prototype
-
 function Animal() {}
 Animal.prototype.speak = function () {
     console.log("Speaking...");
