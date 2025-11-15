@@ -1,15 +1,13 @@
-// 11.
-
 // Question: What will be logged?
 
 const p = new Promise((resolve, reject) => {
-    console.log(1);
-    setTimeout(() => resolve(2), 1000);
-  });
-  
-  p.then((res) => console.log(res));
-  console.log(3);
-  
+  console.log(1);
+  setTimeout(() => resolve(2), 1000);
+});
+
+p.then((res) => console.log(res));
+console.log(3);
+
 // Answer
 // 1
 // 3
