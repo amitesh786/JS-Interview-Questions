@@ -1,5 +1,4 @@
 // 4. What will be the output of multiple .then() calls?
-
 const promise = new Promise((resolve) => resolve("First"));
 
 promise
