@@ -1,7 +1,7 @@
 // 3. What happens if a Promise is rejected but there is no .catch()?
 
 new Promise((resolve, reject) => {
-    reject("Error occurred");
+  reject("Error occurred");
 });
 console.log("After Promise");
 
@@ -12,6 +12,5 @@ console.log("After Promise");
 // Always handle errors with .catch():
 
 new Promise((resolve, reject) => {
-    reject("Error occurred");
-  })
-.catch((err) => console.log(err));
+  reject("Error occurred");
+}).catch((err) => console.log(err));
