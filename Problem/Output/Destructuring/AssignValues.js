@@ -2,9 +2,9 @@
 
 [a, b, ...rest] = [1, 2, 3, 4];
 
-console.log(a);      // 1
-console.log(b);      // 2
-console.log(rest);   // [3, 4]
+console.log(a); // 1
+console.log(b); // 2
+console.log(rest); // [3, 4]
 
 // The right-hand side ([1,2,3,4]) is an array with four elements.
 
