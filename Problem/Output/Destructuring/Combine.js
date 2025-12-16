@@ -2,12 +2,15 @@
 
 // Question: What will be the output?
 
-function getSettings({ theme = "light", layout: { sidebar = true } = {} } = {}) {
-    console.log(`Theme: ${theme}, Sidebar: ${sidebar}`);
-  }
-  getSettings(); 
-  getSettings({ theme: "dark" }); 
-  getSettings({ layout: { sidebar: false } });
+function getSettings({
+  theme = "light",
+  layout: { sidebar = true } = {},
+} = {}) {
+  console.log(`Theme: ${theme}, Sidebar: ${sidebar}`);
+}
+getSettings();
+getSettings({ theme: "dark" });
+getSettings({ layout: { sidebar: false } });
 
 //   Answer:
 
