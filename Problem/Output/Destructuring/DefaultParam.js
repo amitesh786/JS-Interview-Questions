@@ -1,7 +1,7 @@
 // Default Values in Function Parameter Destructuring
 
 function userInfo({ name = "Amitesh", age = 33 }) {
-    console.log(`Name: ${name}, Age: ${age}`);
+  console.log(`Name: ${name}, Age: ${age}`);
 }
 userInfo({ name: "Singh" });
 userInfo({});
