@@ -12,10 +12,9 @@ getCity(person);
 
 // Answer:
 function getCity({ address: { city } }) {
-    console.log(city);
+  console.log(city);
 }
 getCity(person); // "New York"
-  
+
 // Explanation:
 // { address: { city } } extracts city from the nested address object.
-
