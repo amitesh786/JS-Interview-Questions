@@ -4,17 +4,17 @@
 // Useful for cleanup tasks like closing a connection or logging data.
 
 function testFinally() {
-    try {
-      console.log("Try block executed");
-      throw new Error("An error occurred");
-    } catch (error) {
-      console.log("Error caught:", error.message);
-    } finally {
-      console.log("Finally block always runs!");
-    }
+  try {
+    console.log("Try block executed");
+    throw new Error("An error occurred");
+  } catch (error) {
+    console.log("Error caught:", error.message);
+  } finally {
+    console.log("Finally block always runs!");
   }
-  
-  testFinally();
+}
+
+testFinally();
 
 // Output
 
