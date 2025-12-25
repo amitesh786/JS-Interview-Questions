@@ -11,5 +11,5 @@ try {
 
 // Asynchronous error handling with .catch()
 fetch("https://invalid.url")
-  .then(response => response.json())
-  .catch(error => console.log("Fetch error:", error.message));
+  .then((response) => response.json())
+  .catch((error) => console.log("Fetch error:", error.message));
