@@ -1,9 +1,9 @@
 // 7. Question: What will be logged?
 const obj = {
-    value: 42,
-    getValue: function () {
-      return this.value;
-    },
+  value: 42,
+  getValue: function () {
+    return this.value;
+  },
 };
 
 const extracted = obj.getValue;
