@@ -2,8 +2,8 @@ console.log([] == ![]);
 console.log(null == 0);
 console.log(null >= 0);
 console.log(null > 0);
-console.log('5' + 3 - 1);
-console.log('5' - 3 + '1');
+console.log("5" + 3 - 1);
+console.log("5" - 3 + "1");
 
 // Explanation:
 
@@ -46,9 +46,9 @@ console.log('5' - 3 + '1');
 // Final Output: "21" ✅
 
 // Output:
-true
-false
-true
-false
-52
-"21"
+true;
+false;
+true;
+false;
+52;
+("21");
