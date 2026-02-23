@@ -1,9 +1,9 @@
 console.log(typeof NaN);
 console.log(NaN == NaN);
 console.log([] == false);
-console.log('foo' && true || false);
-console.log(!!'false' == !!'true');
-console.log((x => x)('x'));
+console.log(("foo" && true) || false);
+console.log(!!"false" == !!"true");
+console.log(((x) => x)("x"));
 
 // Explanation:
 
@@ -47,9 +47,9 @@ console.log((x => x)('x'));
 // Final Output: "x" ✅
 
 // Output:
-"number"
-false
-true
-true
-true
-"x"
+("number");
+false;
+true;
+true;
+true;
+("x");
