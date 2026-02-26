@@ -9,7 +9,7 @@ const increment = () => {
 
 increment();
 
-// Output 
+// Output
 // 1
 // 0
 
