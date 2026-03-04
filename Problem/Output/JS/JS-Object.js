@@ -4,7 +4,7 @@ const person = { name: "Amitesh" };
 
 let name;
 if (person && person.name) {
-    name = person.name;
+  name = person.name;
 }
 console.log("Name (if condition):", name);
 
