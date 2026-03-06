@@ -2,7 +2,7 @@
 let count = 1;
 console.log("Count Before:", count); // 1
 
-let funct = (count++, count++, count => count + 1);
+let funct = (count++, count++, (count) => count + 1);
 
 console.log("Count After :", count); // 3
 console.log("Value Funct:", funct(count)); // 4
