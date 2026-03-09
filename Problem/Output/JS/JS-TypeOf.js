@@ -3,7 +3,7 @@ console.log(typeof null);
 console.log(null instanceof Object);
 console.log([] + {});
 
-// Output: 
+// Output:
 // "object"
 // false
 // "[object Object]"
@@ -27,4 +27,3 @@ console.log([] + {});
 
 // Here is another code snippet.
 // console.log({} + []);
-
