@@ -10,7 +10,7 @@ console.log(obj.length);
 // However, length is a property of actual arrays, and obj is not an array—it just has the prototype of an array.
 // length is not automatically set for normal objects, so obj.length is undefined.
 
-// Idea: 
+// Idea:
 // If you make obj an actual array:
 const arr = [];
 Object.setPrototypeOf(arr, Array.prototype);
