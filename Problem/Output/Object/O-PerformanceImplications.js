@@ -13,5 +13,5 @@ console.time("SetPrototype");
 Object.setPrototypeOf(obj, newProto);
 console.timeEnd("SetPrototype"); // Slower than creating an object directly
 
-// Alternative: 
+// Alternative:
 // Instead of modifying the prototype dynamically, define it at creation using Object.create().
