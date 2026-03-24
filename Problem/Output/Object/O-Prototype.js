@@ -5,7 +5,11 @@
 const obj = { name: "Alice" };
 console.log(Object.getPrototypeOf(obj)); // Output: Object.prototype
 
-const newProto = { greet() { console.log("Hello!"); } };
+const newProto = {
+  greet() {
+    console.log("Hello!");
+  },
+};
 Object.setPrototypeOf(obj, newProto);
 
 obj.greet(); // Output: Hello!
