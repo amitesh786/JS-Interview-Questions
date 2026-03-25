@@ -23,6 +23,5 @@ obj.greet();
 
 // Explanation:
 // obj is created with proto as its prototype.
-// Since proto has a greet() method, 
+// Since proto has a greet() method,
 // calling obj.greet() looks up the prototype chain and finds greet(), which logs "Hello".
-
