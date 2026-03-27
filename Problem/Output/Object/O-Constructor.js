@@ -19,9 +19,9 @@
 
 // Using Object.create()
 const animal = {
-    makeSound() {
-        console.log(this.sound);
-    }
+  makeSound() {
+    console.log(this.sound);
+  },
 };
 
 const dog = Object.create(animal);
@@ -30,15 +30,15 @@ dog.makeSound(); // Output: Bark
 
 // Using new Constructor()
 function Animal(sound) {
-    this.sound = sound;
+  this.sound = sound;
 }
 Animal.prototype.makeSound = function () {
-    console.log(this.sound);
+  console.log(this.sound);
 };
 
 const cat = new Animal("Meow");
 cat.makeSound(); // Output: Meow
 
-// Key Difference: 
-// Object.create(animal) lets us set the prototype directly, 
+// Key Difference:
+// Object.create(animal) lets us set the prototype directly,
 // whereas new Animal("Meow") depends on a constructor.
