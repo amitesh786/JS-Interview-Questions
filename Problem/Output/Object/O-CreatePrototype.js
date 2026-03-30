@@ -17,4 +17,3 @@ console.log(obj2.hello); // Output: world
 // Key Difference:
 // Object.create() is preferred when creating a new object with a specified prototype,
 // while Object.setPrototypeOf() is used to modify an existing object’s prototype.
-
