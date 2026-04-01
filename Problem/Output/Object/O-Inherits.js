@@ -1,8 +1,8 @@
 // How would you implement prototypal inheritance using Object.create()?
 const Animal = {
-    speak() {
-        console.log(`${this.name} makes a sound.`);
-    }
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  },
 };
 
 const dog = Object.create(Animal);
