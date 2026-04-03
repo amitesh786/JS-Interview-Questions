@@ -6,7 +6,11 @@ const obj = Object.create(null);
 console.log(Object.getPrototypeOf(obj)); // Output: null
 
 // Setting a prototype later
-const proto = { greet() { console.log("Hello!"); } };
+const proto = {
+  greet() {
+    console.log("Hello!");
+  },
+};
 Object.setPrototypeOf(obj, proto);
 
 obj.greet(); // Output: Hello!
