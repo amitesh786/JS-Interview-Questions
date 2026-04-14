@@ -1,6 +1,6 @@
 // What will be the output ?
 
-let person = { name: { surname: "Singh" }};
+let person = { name: { surname: "Singh" } };
 console.log(person?.name?.surname?.test ?? "Amitesh");
 
 // ?. (optional chaining) prevents errors when accessing deeply nested properties.
