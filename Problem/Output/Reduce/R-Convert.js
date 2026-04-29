@@ -2,12 +2,11 @@
 
 const arr = [1, 2, 2, 3, 3, 3];
 
-const frequencyCounter = (arr) => 
-    arr.reduce((acc, num) => {
-        acc[num] = (acc[num] || 0) + 1;
-        return acc;
-    }, {});
+const frequencyCounter = (arr) =>
+  arr.reduce((acc, num) => {
+    acc[num] = (acc[num] || 0) + 1;
+    return acc;
+  }, {});
 // Example usage:
-console.log(frequencyCounter(arr)); 
+console.log(frequencyCounter(arr));
 // Output: { '1': 1, '2': 2, '3': 3 }
-
