@@ -1,13 +1,11 @@
 // TypeScript, interfaces and type aliases are both used to define object shapes, but they have key differences:
-interface Person 
-{ 
-  name: string; 
+interface Person {
+  name: string;
   age: number;
 }
 
-type PersonType = 
-{ 
-  name: string; 
+type PersonType = {
+  name: string;
   age: number;
 };
 
