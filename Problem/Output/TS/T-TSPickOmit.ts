@@ -1,8 +1,8 @@
 // Question: Demonstrate the use of Partial, Pick, and Omit in TypeScript.
 interface Employee {
-    id: number;
-    name: string;
-    role: string;
+  id: number;
+  name: string;
+  role: string;
 }
 
 // Partial - Makes all properties optional
