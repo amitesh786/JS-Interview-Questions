@@ -1,8 +1,8 @@
 // Question: Define a TypeScript object with readonly and optional properties.
 interface Product {
-    readonly id: number;
-    name: string;
-    description?: string; // Optional property
+  readonly id: number;
+  name: string;
+  description?: string; // Optional property
 }
 
 // Example usage
