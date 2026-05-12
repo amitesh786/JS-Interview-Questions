@@ -9,9 +9,9 @@
 // Kind of a Problem: Leads to "callback hell" (deeply nested callbacks).
 
 function fetchData(callback) {
-    setTimeout(() => {
-        callback("Data received");
-    }, 1000);
+  setTimeout(() => {
+    callback("Data received");
+  }, 1000);
 }
 fetchData(console.log);
 
@@ -21,9 +21,9 @@ fetchData(console.log);
 // Helps flatten code structure.
 
 function fetchData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve("Data received"), 1000);
-    });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Data received"), 1000);
+  });
 }
 fetchData().then(console.log);
 
@@ -33,10 +33,10 @@ fetchData().then(console.log);
 // Uses async for functions and await for handling resolved values.
 
 async function fetchData() {
-    return "Data received";
+  return "Data received";
 }
 async function main() {
-    console.log(await fetchData());
+  console.log(await fetchData());
 }
 main();
 
