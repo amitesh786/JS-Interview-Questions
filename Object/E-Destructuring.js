@@ -1,4 +1,4 @@
-// Destructuring allows us to unpack values from arrays or objects into 
+// Destructuring allows us to unpack values from arrays or objects into
 // separate variables in a concise and readable way.
 
 // Object Destructuring
@@ -32,11 +32,14 @@ console.log(rest); // { age: 34, country: "Italy" }
 // ...rest collects the remaining properties into an object.
 
 // Nested Object Destructuring
-const person = { 
-    name: "Amitesh", 
-    address: { city: "Milan", zip: 20100 } 
+const person = {
+  name: "Amitesh",
+  address: { city: "Milan", zip: 20100 },
 };
-const { name, address: { city, zip } } = person;
+const {
+  name,
+  address: { city, zip },
+} = person;
 console.log(name); // Amitesh
 console.log(city); // Milan
 console.log(zip); // 20100
@@ -44,7 +47,7 @@ console.log(zip); // 20100
 
 // Function Parameter Destructuring
 function greet({ name, age }) {
-    console.log(`Hello ${name}, you are ${age} years old.`);
+  console.log(`Hello ${name}, you are ${age} years old.`);
 }
 const user = { name: "Amitesh", age: 34 };
 greet(user); // Hello Amitesh, you are 34 years old.
