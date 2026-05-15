@@ -1,7 +1,7 @@
 // Shallow Copy
 
 // A shallow copy of an object or array creates a new object or array but does not recursively copy nested objects.
-// Instead, it copies references to those nested objects. 
+// Instead, it copies references to those nested objects.
 // This means that if the original object or array contains other objects, the shallow copy will reference the same nested objects.
 
 const obj1 = { a: 1, nested: { b: 2 } };
@@ -18,7 +18,7 @@ console.log(obj2.nested.b);
 
 // Deep copy
 
-// A deep copy creates a new object or array and recursively copies all objects and arrays it contains. 
+// A deep copy creates a new object or array and recursively copies all objects and arrays it contains.
 // This means that nested objects will be copied as well, so the original
 // and the copy do not share any references to the nested objects.
 
