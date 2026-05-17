@@ -1,11 +1,11 @@
 // "use strict";
 {
-    function display() {
-        console.log("Inside display");
-    }
+  function display() {
+    console.log("Inside display");
+  }
 }
 
-display(); 
+display();
 
 // What's Happening?
 
