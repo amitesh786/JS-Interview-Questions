@@ -1,7 +1,7 @@
 // "use strict";
 
-function sum (arg1, arg2) {
-    return arguments[0] + arguments[1];
+function sum(arg1, arg2) {
+  return arguments[0] + arguments[1];
 }
 
 console.log(sum(10, 10));
