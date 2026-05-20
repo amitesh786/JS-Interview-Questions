@@ -1,4 +1,4 @@
-// Destructuring allows us to unpack values from arrays or objects into 
+// Destructuring allows us to unpack values from arrays or objects into
 // separate variables in a concise and readable way.
 
 // Array Destructuring
@@ -43,7 +43,8 @@ console.log(y); // 20 (Default value is used)
 // If no value is present, a default value is used.
 
 // Swapping Variables Using Destructuring
-let x = 5, y = 10;
+let x = 5,
+  y = 10;
 [x, y] = [y, x];
 
 console.log(x); // 10
