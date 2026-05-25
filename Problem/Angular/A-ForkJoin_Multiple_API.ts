@@ -1,10 +1,10 @@
 // Making Multiple API Calls in Parallel
 
 forkJoin({
-    users: this.http.get('/api/users'),
-    posts: this.http.get('/api/posts')
-}).subscribe(response => {
-    console.log(response.users, response.posts);
+  users: this.http.get("/api/users"),
+  posts: this.http.get("/api/posts"),
+}).subscribe((response) => {
+  console.log(response.users, response.posts);
 });
 
 // The forkJoin() operator in RxJS allows you to execute

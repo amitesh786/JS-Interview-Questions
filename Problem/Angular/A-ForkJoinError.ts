@@ -2,13 +2,13 @@
 // By catching errors for individual requests,
 // we can return default values when an API fails.
 
-import { catchError, of } from 'rxjs';
+import { catchError, of } from "rxjs";
 
 forkJoin({
-    users: this.http.get('/api/users').pipe(catchError(() => of([]))),
-    posts: this.http.get('/api/posts').pipe(catchError(() => of([])))
-}).subscribe(response => {
-    console.log(response.users, response.posts);
+  users: this.http.get("/api/users").pipe(catchError(() => of([]))),
+  posts: this.http.get("/api/posts").pipe(catchError(() => of([]))),
+}).subscribe((response) => {
+  console.log(response.users, response.posts);
 });
 
 // Fix: Using catchError() for each request
