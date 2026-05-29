@@ -1,17 +1,17 @@
 // ReversePipe
 @Pipe({
-    name: 'reverse'
+  name: "reverse",
 })
 export class ReversePipe implements PipeTransform {
-    transform(value: string): string {
-        return value.split('').reverse().join('');
-    }
+  transform(value: string): string {
+    return value.split("").reverse().join("");
+  }
 }
 
 // <p>{{ 'hello' | reverse }}</p>
 // Output: olleh
 
-// The ReversePipe is a custom Angular pipe that takes a string as input and 
+// The ReversePipe is a custom Angular pipe that takes a string as input and
 // returns the reversed version of the string.
 
 // Pipe: This decorator is used to define a custom pipe in Angular.
