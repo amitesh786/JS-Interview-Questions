@@ -7,23 +7,23 @@
 
 // Input Data
 const students = [
-    { name: "Alice", score: 85, attendance: 90 },
-    { name: "Bob", score: 70, attendance: 80 },
-    { name: "Charlie", score: 95, attendance: 60 },
-    { name: "David", score: 88, attendance: 85 },
-    { name: "Eve", score: 78, attendance: 95 }
+  { name: "Alice", score: 85, attendance: 90 },
+  { name: "Bob", score: 70, attendance: 80 },
+  { name: "Charlie", score: 95, attendance: 60 },
+  { name: "David", score: 88, attendance: 85 },
+  { name: "Eve", score: 78, attendance: 95 },
 ];
 
 // Expected Output
 [
-    { name: "Alice", score: 85 },
-    { name: "David", score: 88 }
-]
+  { name: "Alice", score: 85 },
+  { name: "David", score: 88 },
+];
 
 // Solution
 const topStudents = students
-    .filter(student => student.score >= 80 && student.attendance >= 75)
-    .map(student => ({ name: student.name, score: student.score }));
+  .filter((student) => student.score >= 80 && student.attendance >= 75)
+  .map((student) => ({ name: student.name, score: student.score }));
 
 console.log(topStudents);
 
