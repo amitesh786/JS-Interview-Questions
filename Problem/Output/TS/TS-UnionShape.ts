@@ -1,23 +1,23 @@
 // Question: Implement a TypeScript function using a discriminated union to handle different shapes.
 interface Circle {
-    kind: "circle";
-    radius: number;
+  kind: "circle";
+  radius: number;
 }
 
 interface Square {
-    kind: "square";
-    side: number;
+  kind: "square";
+  side: number;
 }
 
 type Shape = Circle | Square;
 
 function getArea(shape: Shape): number {
-    switch (shape.kind) {
-        case "circle":
-            return Math.PI * shape.radius * shape.radius;
-        case "square":
-            return shape.side * shape.side;
-    }
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius * shape.radius;
+    case "square":
+      return shape.side * shape.side;
+  }
 }
 
 // Example usage
