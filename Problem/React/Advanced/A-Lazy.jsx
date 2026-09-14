@@ -12,7 +12,7 @@ const App = () => (
 
 export default App;
 
-// Lazy loading is a performance optimization technique that loads components only when they are needed rather than all at once. 
+// Lazy loading is a performance optimization technique that loads components only when they are needed rather than all at once.
 // This reduces the initial load time of the application.
 
 // Dynamically imports LazyComponent when it is actually rendered.
