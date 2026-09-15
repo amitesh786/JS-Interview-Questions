@@ -9,7 +9,7 @@ const ChildComponent = React.memo(({ value }) => {
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const [value, setValue] = useState(100)
+  const [value, setValue] = useState(100);
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Increment Count</button>
@@ -20,8 +20,7 @@ const App = () => {
 
 export default App;
 
-
-// React.memo is a higher-order component (HOC) that memoizes functional components, 
+// React.memo is a higher-order component (HOC) that memoizes functional components,
 // preventing unnecessary re-renders when props remain unchanged.
 
 // ChildComponent:
@@ -33,9 +32,8 @@ export default App;
 // Clicking the Increment Count button updates count, but does not change value.
 
 // Optimization:
-// Since React.memo prevents unnecessary renders, the ChildComponent will 
+// Since React.memo prevents unnecessary renders, the ChildComponent will
 // not re-render when count changes because its prop (value) remains the same.
 // If value changes, ChildComponent will re-render.
 
 // React.memo prevents re-rendering if props haven't changed.
-
