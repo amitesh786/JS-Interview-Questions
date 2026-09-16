@@ -24,7 +24,7 @@ const App = () => {
 export default App;
 
 // 1. ChildComponent - It receives a prop called number.
-// It defines a function slowCalculation(num), which artificially creates a delay 
+// It defines a function slowCalculation(num), which artificially creates a delay
 // (simulating an expensive computation) by looping a billion times before returning num * 2.
 // The function is wrapped inside useMemo to memoize the computed result so that it only recalculates when number changes.
 // It then renders the computed value inside an <h2> tag.
@@ -40,4 +40,3 @@ export default App;
 // Without useMemo, the slow function would execute unnecessarily on each render, causing lag.
 
 // useMemo prevents expensive calculations from running on every render.
-
