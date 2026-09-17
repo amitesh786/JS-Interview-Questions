@@ -1,12 +1,11 @@
-
 const App = () => {
-    const [count, setCount] = React.useState(0);
+  const [count, setCount] = React.useState(0);
 
-    React.useEffect(() => {
-        setCount(count + 1);
-    }, []);
+  React.useEffect(() => {
+    setCount(count + 1);
+  }, []);
 
-    return <h1>{count}</h1>;
+  return <h1>{count}</h1>;
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
@@ -32,7 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // 3. Re-render:
 
 // When setCount(1) executes, React schedules a re-render.
-// On the next render, count is now 1, and since useEffect does not run again 
+// On the next render, count is now 1, and since useEffect does not run again
 // (because it has an empty dependency array), the final rendered output is 1.
 
 // Why It Doesn't Cause an Infinite Loop?
