@@ -1,20 +1,19 @@
-
 const App = () => {
-    let count = 0;
+  let count = 0;
 
-    const handleClick = () => {
-        count++;
-        console.log(count);
-    };
+  const handleClick = () => {
+    count++;
+    console.log(count);
+  };
 
-    return (
-        <div>
-        <button onClick={handleClick}>Click Me</button>
-        <p>Count: {count}</p>
-        </div>
-    );
+  return (
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+      <p>Count: {count}</p>
+    </div>
+  );
 };
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 // Options:
@@ -34,7 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 // When the button is clicked, handleClick is executed.
 // count++ increments count, and console.log(count); logs the updated value to the console.
-// However, since React does not re-render the component, 
+// However, since React does not re-render the component,
 // the UI does not reflect the updated count value.
 
 // 3. No Re-Render Trigger:
