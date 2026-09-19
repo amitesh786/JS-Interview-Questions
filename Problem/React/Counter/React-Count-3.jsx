@@ -1,24 +1,23 @@
-
 const App = () => {
-    const [count, setCount] = React.useState(0);
-  
-    const handleClick = () => {
-      setCount(count + 1);
-      setCount(count + 1);
-      setCount(prev => prev + 1);
-      setCount(prev => prev + 1);
-    };
-  
-    return (
-      <div>
-        <button onClick={handleClick}>Click Me</button>
-        <p>Count: {count}</p>
-      </div>
-    );
+  const [count, setCount] = React.useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+    setCount(count + 1);
+    setCount((prev) => prev + 1);
+    setCount((prev) => prev + 1);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+      <p>Count: {count}</p>
+    </div>
+  );
 };
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-  
+
 // Options:
 // A) The count will increase by 2 on each click
 // B) The count will increase by 3 on each click
