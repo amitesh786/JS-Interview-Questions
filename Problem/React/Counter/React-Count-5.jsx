@@ -1,20 +1,19 @@
-
 const App = () => {
-    const [count, setCount] = React.useState(0);
-  
-    const handleClick = () => {
-      setCount(prev => prev + 1);
-      console.log(count);
-    };
-  
-    return (
-      <div>
-        <button onClick={handleClick}>Click</button>
-        <p>Count: {count}</p>
-      </div>
-    );
+  const [count, setCount] = React.useState(0);
+
+  const handleClick = () => {
+    setCount((prev) => prev + 1);
+    console.log(count);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click</button>
+      <p>Count: {count}</p>
+    </div>
+  );
 };
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 // Options:
@@ -31,7 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // The setCount call schedules an update, but console.log(count) runs immediately,
 // before the state actually updates.
 
-// Since count hasn't changed yet when console.log(count) 
+// Since count hasn't changed yet when console.log(count)
 // executes, it logs the previous state value.
 
 // Example Output:
