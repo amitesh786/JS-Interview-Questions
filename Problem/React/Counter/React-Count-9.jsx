@@ -1,16 +1,18 @@
 // What is the output of below code:
 
 const App = () => {
-    let countRef = useRef(0);
+  let countRef = useRef(0);
 
-    function handleIncrement() {
-      countRef.current = countRef.current + 1;
-    }
-  
-    return <>
+  function handleIncrement() {
+    countRef.current = countRef.current + 1;
+  }
+
+  return (
+    <>
       <span>Count: {countRef.current}</span>
       <button onClick={handleIncrement}>Click me</button>
-    </>;
+    </>
+  );
 };
 export default App;
 
@@ -24,7 +26,6 @@ export default App;
 // Render: This is where React calls the components in order to output something on the screen
 // Commit: React applies changes to the DOM
 
-// Any updates to the ref will be reflected only in the commit phase. 
-// In other words, React sets counterRef.current during the commit phase. 
+// Any updates to the ref will be reflected only in the commit phase.
+// In other words, React sets counterRef.current during the commit phase.
 // Hence, countRef.current always holds value 0 irrespective of how many times the Increment button clicked.
-
