@@ -1,19 +1,17 @@
 const App = () => {
-    const [count, setCount] = React.useState(0);
-  
-    React.useEffect(() => {
-      const handleClick = () => {
-        console.log("Clicked:", count);
-      };
-      document.addEventListener("click", handleClick);
-      return () => document.removeEventListener("click", handleClick);
-    }, []);
-  
-    return (
-      <button onClick={() => setCount(count + 1)}>Click</button>
-    );
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    const handleClick = () => {
+      console.log("Clicked:", count);
+    };
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, []);
+
+  return <button onClick={() => setCount(count + 1)}>Click</button>;
 };
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 // Scenario: Click the button twice. What will be logged?
@@ -45,4 +43,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // Second Button Click (count = 2):
 // count updates to 2, but the event listener is still using the old count = 0.
 // Clicking anywhere logs -> Clicked: 0
-
