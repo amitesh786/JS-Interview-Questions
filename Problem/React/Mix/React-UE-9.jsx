@@ -1,18 +1,16 @@
 const App = () => {
-    const [count, setCount] = React.useState(0);
-  
-    React.useEffect(() => {
-      console.log("Effect runs:", count);
-      return () => console.log("Cleanup runs:", count);
-    }, [count]);
-  
-    return (
-      <button onClick={() => setCount(count + 1)}>Click</button>
-    );
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    console.log("Effect runs:", count);
+    return () => console.log("Cleanup runs:", count);
+  }, [count]);
+
+  return <button onClick={() => setCount(count + 1)}>Click</button>;
 };
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-  
+
 // Scenario: Click the button twice. What gets logged?
 
 // Options:
@@ -32,11 +30,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // The effect runs with count = 0, logging -> Effect runs: 0
 
 // First Click (count = 1):
-// The component re-renders, and before the effect runs again, 
+// The component re-renders, and before the effect runs again,
 // React cleans up the previous effect by running the cleanup function: -> Cleanup runs: 0
 // Then, the effect runs with count = 1 -> Effect runs: 1
 
 // Second Click (count = 2):
 // The component re-renders again. Cleanup from the previous effect runs first: -> Cleanup runs: 1
 // Then, the effect runs with count = 2 -> Effect runs: 2
-
